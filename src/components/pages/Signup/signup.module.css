@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8rem 0;
+
 }
 
 .signupContainer h3 {
@@ -93,7 +95,14 @@ input:focus {
 /* login */
 .login {
   color: #4299e1;
+
 }
 .login:hover {
   cursor: pointer;
+}
+@media (max-width:700px) {
+  .signup{
+    background: none;
+  }
+  
 }

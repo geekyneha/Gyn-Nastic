@@ -89,6 +89,9 @@
   border-radius: 8px;
   font-size: 1.4rem;
 }
+.view-all:hover{
+  cursor: pointer;
+}
 
 /* scroll buttons */
 .scroll-left,

@@ -50,6 +50,9 @@
   width: 200px;
   height: 200px;
 }
+.all-team img:hover{
+  cursor: grab;
+}
 
 /* view all */
 .view-all-container {
@@ -62,6 +65,9 @@
   border: 2px solid #db3137;
   border-radius: 8px;
   font-size: 1.4rem;
+}
+.view-all:hover{
+  cursor: pointer;
 }
 /*scroll button */
 .scroll-left,
@@ -87,6 +93,7 @@
   .team-image {
     width: fit-content;
   }
+ 
 }
 @media (max-width: 600px) {
   .team-image img {

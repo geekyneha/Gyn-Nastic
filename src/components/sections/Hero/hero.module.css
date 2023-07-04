@@ -9,6 +9,7 @@
   color: #fff;
   width: fit-content;
   flex-wrap: wrap;
+  padding-top: 5rem;
 }
 
 .leftSection {
@@ -46,6 +47,9 @@
   color: #fff;
   font-size: 1.2rem;
   border: none;
+}
+.joinWithUSBtn:hover{
+  cursor: pointer;
 }
 
 .joinWithUSBtnContainer {

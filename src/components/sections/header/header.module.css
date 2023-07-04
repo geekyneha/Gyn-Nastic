@@ -6,7 +6,7 @@
   background-color: #181818;
   color: #fff;
   padding: 0.5%;
-  position: sticky;
+  position: fixed;
   z-index: 10;
   top: 0;
   width: 99%;
@@ -14,7 +14,7 @@
 
 /* Gym logo */
 .logo {
-  margin: 10px 0;
+  margin: 1rem 0;
   text-align: left;
 }
 .logo > img {
@@ -23,7 +23,7 @@
 .logoName {
   color: red;
   font-size: 2rem;
-  margin: 0 8rem;
+  margin-left: 7rem ;
 }
 
 /* navbar */
@@ -50,10 +50,16 @@
   padding: 1rem 2rem;
   margin-right: 3rem;
 }
+.joinUsBtn:hover,.logo:hover{
+  cursor: pointer;
+}
 
 /* Hamburger menu */
 .Menu {
   display: none;
+}
+.Menu:hover {
+  cursor: pointer;
 }
 .navMenu {
   height: 100%;
@@ -62,7 +68,11 @@
   padding: 3rem;
   position: fixed;
   right: 0;
-  top: 40px;
+  
+  
+}
+.closeMenu{
+  display: none;
 }
 
 /* Media Queries for responsivesness */
@@ -70,7 +80,7 @@
   .navItem {
     list-style: none;
     margin: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -80,7 +90,7 @@
 }
 @media (max-width: 950px) {
   .navBar {
-    visibility: hidden;
+   display: none;
   }
   .joinUsBtn {
     display: none;
@@ -88,5 +98,17 @@
   .Menu {
     display: block;
     margin-right: 2rem;
+  }
+  .closeMenu{
+    display: block;
+    color: #fff;
+    fill: #fff;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+
+  }
+  .closeMenu:hover{
+    cursor: pointer;
   }
 }

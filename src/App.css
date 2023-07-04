@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -20,3 +21,10 @@
   color: white;
 }
 
+@media (max-width:500px) {
+  .app{
+    font-size: 2rem;
+  }
+  
+  
+}

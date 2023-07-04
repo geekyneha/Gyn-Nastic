@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 5rem 0;
 }
 
 .loginContainer {
@@ -104,3 +105,13 @@ input:focus {
 .goHome:hover {
   background-color: #4299e1;
 }
+@media (max-width:600px){
+  .login{
+    background: none;
+  }
+  .goHome{
+    color: #4299e1;
+  }
+
+}
+
