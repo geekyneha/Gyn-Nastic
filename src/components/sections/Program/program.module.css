@@ -7,17 +7,18 @@
 }
 .training-program {
   margin: 0 14rem;
-   overflow-x: scroll; 
+  overflow-x: scroll;
+  
   /* overflow-y: hidden;  */
   width: 74vw;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 .training-program::-webkit-scrollbar {
   display: none;
 }
 .training-program-heading {
   font-size: 3rem;
-  color: #db3137;
+  color: #93a6e2;
   font-weight: bolder;
   margin-left: 14rem;
   padding: 0;
@@ -95,45 +96,38 @@
   cursor: pointer;
 }
 @media (max-width: 700px) {
-  .training-program{
-
+  .training-program {
     overflow-y: hidden;
     overflow-x: hidden;
   }
   .all-program {
-   
     margin: 0;
     position: relative;
-   bottom: 680vh;
-   
+    bottom: 680vh;
   }
   .Program-image {
     width: fit-content;
-    
-
   }
   .all-program-name {
     flex-direction: column;
   }
 }
 
-@media (max-width:1200px) {
-  .all-program-name{
+@media (max-width: 1200px) {
+  .all-program-name {
     display: none;
-
   }
-  .all-program{
+  .all-program {
     flex-wrap: wrap;
     position: static;
-
   }
 
-  .training-program{
+  .training-program {
     overflow: unset;
     margin: 5rem 2rem;
     width: 96vw;
   }
-  .training-program-heading{
+  .training-program-heading {
     position: static;
     padding: 1rem;
   }
