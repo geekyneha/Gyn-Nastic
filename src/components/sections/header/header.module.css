@@ -23,7 +23,7 @@
 .logoName {
   color: red;
   font-size: 2rem;
-  margin-left: 7rem ;
+  margin-left: 7rem;
 }
 
 /* navbar */
@@ -39,6 +39,9 @@
   line-height: 2.4;
   margin: 1rem;
 }
+.navItem:hover {
+  color: rgb(231, 86, 86);
+}
 
 /* button */
 .joinUsBtn {
@@ -50,7 +53,8 @@
   padding: 1rem 2rem;
   margin-right: 3rem;
 }
-.joinUsBtn:hover,.logo:hover{
+.joinUsBtn:hover,
+.logo:hover {
   cursor: pointer;
 }
 
@@ -62,16 +66,19 @@
   cursor: pointer;
 }
 .navMenu {
-  height: 100%;
-  width: 50%;
+ 
+  width: 100%;
   background-color: #000;
-  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
   position: fixed;
-  right: 0;
-  
-  
+  top: 0;
+  height: 80%;
 }
-.closeMenu{
+.closeMenu {
   display: none;
 }
 
@@ -80,7 +87,8 @@
   .navItem {
     list-style: none;
     margin: 1rem;
-    font-size: 1.5rem;
+
+  
   }
 }
 @media (max-width: 768px) {
@@ -90,7 +98,7 @@
 }
 @media (max-width: 950px) {
   .navBar {
-   display: none;
+    display: none;
   }
   .joinUsBtn {
     display: none;
@@ -99,16 +107,15 @@
     display: block;
     margin-right: 2rem;
   }
-  .closeMenu{
+  .closeMenu {
     display: block;
     color: #fff;
     fill: #fff;
     position: fixed;
     right: 2rem;
     top: 2rem;
-
   }
-  .closeMenu:hover{
+  .closeMenu:hover {
     cursor: pointer;
   }
 }
