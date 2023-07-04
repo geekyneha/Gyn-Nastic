@@ -6,19 +6,19 @@ import { useNavigate } from 'react-router-dom'
 const Team = () => {
 
   const [scrollPosition,setScrollPosition]=useState(0);
-  const [totalProgram,setTotalProgram]=useState(TRAINERS.length);
-  const programContainerRef=useRef(null);
+  const [totalteam,setTotalteam]=useState(TRAINERS.length);
+  const teamContainerRef=useRef(null);
   const navigate=useNavigate();
 
   const scrollLeft=()=>{
-    programContainerRef.current.scrollBy({
+    teamContainerRef.current.scrollBy({
       left:400,
       behavior:'smooth'
     })
 
   }
   const scrollRight=()=>{
-    programContainerRef.current.scrollBy({
+    teamContainerRef.current.scrollBy({
       left:-400,
       behavior:'smooth'
     })
@@ -26,17 +26,17 @@ const Team = () => {
   }
   return (
     <>
-      <div className={style["program-container"]}>
-      <div className={style["training-program-heading"]}>Our Professional Trainers</div>
-     <div className={style["training-program"]} ref={programContainerRef}>
+      <div className={style["team-container"]}>
+      <div className={style["training-team-heading"]}>Our Professional Trainers</div>
+     <div className={style["training-team"]} ref={teamContainerRef}>
     
      
 
-   <div  className={style["all-program"]} id='training'>
+   <div  className={style["all-team"]} id='training'>
 
    
     {
-     TRAINERS.map((detalis)=>(<div className={style["Program-image"]} key={detalis.id}><img src={detalis.image_url} alt="Programs" width={250} height={250}/></div>))
+     TRAINERS.map((detalis)=>(<div className={style["team-image"]} key={detalis.id}><img src={detalis.image_url} alt="teams" className={style.images} /></div>))
     }
 
     </div>
