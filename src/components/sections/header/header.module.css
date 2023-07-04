@@ -92,8 +92,14 @@
   }
 }
 @media (max-width: 768px) {
+  .header{
+    padding: 4rem 0;
+  }
   .logo > img {
     display: none;
+  }
+  .logo{
+    font-size: 2rem;
   }
 }
 @media (max-width: 950px) {
