@@ -21,16 +21,14 @@ function App() {
     createRoutesFromElements(
       <>
         <Route path="/" element={<Header />}>
-        <Route index element={<AppLayout />}></Route>
-        <Route path="/about" element={<About />} />
-        
-        <Route path="/view-team" element={<Trainers />} />
-      </Route>
-       <Route path="/login" element={<Login />} />
-       <Route path="/signup" element={<SignUp />} />
-       
-        </>
-    
+          <Route index element={<AppLayout />}></Route>
+          <Route path="/about" element={<About />} />
+
+          <Route path="/view-team" element={<Trainers />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+      </>
     )
   );
 
