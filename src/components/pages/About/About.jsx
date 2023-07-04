@@ -11,8 +11,8 @@ const About = () => {
 
   const videoId = "onUddEsHsK4"; // Replace with the actual YouTube video ID
   const options = {
-    height: "230",
-    width: "380",
+    height: "300",
+    width: "300",
   };
 
   const handleShow1 = () => {
@@ -38,7 +38,7 @@ const About = () => {
         allowFullScreen
       ></iframe> */}
           {showVideo1 && (
-            <div className={style.youTubeVideo}>
+            <div className={style.youTubeVideo1}>
               {" "}
               <YouTube videoId={videoId} opts={options} />{" "}
             </div>
@@ -62,9 +62,8 @@ const About = () => {
 
       <div className={style.chooseUs}>
         <div className={style.WhyChooseUsContainer}>
-          
           <div className={style.whyUsText}>
-          <h1>Why Choose Us?</h1>
+            <h1>Why Choose Us?</h1>
             <li>
               <span className={style.whyUsListText}>
                 Consultation with Expert
@@ -105,9 +104,7 @@ const About = () => {
             )}
           </div>
         </div>
-        <div>
-
-        </div>
+        <div></div>
       </div>
     </div>
   );

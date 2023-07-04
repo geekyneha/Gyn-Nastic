@@ -1,3 +1,4 @@
+/* Login */
 .login {
   height: 100vh;
   background: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600");
@@ -8,15 +9,16 @@
   align-items: center;
   justify-content: center;
 }
-label {
-  display: block;
-}
+
 .loginContainer {
   width: fit-content;
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
 }
+
+/* input  */
+
 input {
   width: 300px;
 
@@ -37,8 +39,7 @@ input::placeholder {
   font-size: 15px;
 }
 input:focus {
-
-  border:2px solid #4299e1;
+  border: 2px solid #4299e1;
 }
 .inputContainer {
   width: fit-content;
@@ -55,6 +56,8 @@ input:focus {
   margin: 0.5rem;
   border: 2px solid #fc8181;
 }
+
+/* error */
 .error {
   margin: 0 8px;
   padding: 0;
@@ -62,6 +65,8 @@ input:focus {
   font-size: 14px;
   color: red;
 }
+
+/* login button */
 .button {
   padding: 0.8rem 8rem;
   background-color: #4299e1;
@@ -79,12 +84,16 @@ input:focus {
 .button:disabled {
   opacity: 0.35;
 }
+
+/* signup */
 .signUp {
   color: #4299e1;
 }
 .signUp:hover {
   cursor: pointer;
 }
+
+/* go to Home */
 .goHome {
   padding: 0.8rem 2rem;
   margin: 2rem;

@@ -1,56 +1,54 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-.hero{
-    height: fit-content;
-    display: flex;
-     background-color: 	#181818;
-    color: #fff;
-    
+/* Hero section */
+.hero {
+  height: fit-content;
+  display: flex;
+  background-color: #181818;
+  color: #fff;
+  width: fit-content;
+  flex-wrap: wrap;
 }
 
-.leftSection{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
-
+.leftSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 .rightSection {
   margin-left: 6rem;
-  
 }
 
-.headLine{
-   font-size: 1.8rem;
-   margin: 7rem 7rem 0;
-   width: 83%;
-   padding: 3%;
-   letter-spacing: 0.2rem;
-   line-height: 1.2;
-   text-align: left;
-  
+/* TagLine */
+.headLine {
+  font-size: 1.8rem;
+  margin: 7rem 7rem 0;
+  width: 83%;
+  padding: 3%;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+  text-align: left;
 }
-.redText{
+.redText {
   color: red;
 }
-.joinWithUSBtn{
-   
-   padding: 1rem 2rem;
 
-    background: red;
-    border-radius: 10px;
-    margin: 5px 20px;
-    color: #fff;
-    font-size: 1.2rem;
-    border:none;
-  
-  
+/* join button */
+.joinWithUSBtn {
+  padding: 1rem 2rem;
 
-
+  background: red;
+  border-radius: 10px;
+  margin: 5px 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
 }
-.joinWithUSBtnContainer{
+
+.joinWithUSBtnContainer {
   padding-bottom: 4rem;
   margin: 0;
   width: fit-content;
@@ -58,20 +56,13 @@
 }
 /* Media Query for mobile Device */
 @media (max-width: 1417px) {
-  .rightSection > img{
+  .rightSection > img {
     width: 80%;
     padding: 0;
-
   }
-    
 }
-@media (max-width: 768px){
-  .hero{
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
   }
-  .rightSection > img{
-    width: 60%;
-
-  }
-
 }

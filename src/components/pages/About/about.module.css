@@ -164,12 +164,20 @@
     position: relative;
     bottom: 350px;
 }
+.youTubeVideo1{
+    z-index: 2;
+    position: relative;
+    bottom: 330px;
+    right: 1px;
+   
+}
 
-.youTubeVideo2{
+/* .youTubeVideo2{
     z-index: 2;
     position: relative;
     bottom: 300px;
-}
+} */
+
 
 @media (max-width: 768px){
     .aboutSection{
@@ -248,4 +256,53 @@
     position: relative;
     bottom: 2px;
 }
+}
+@media (max-width:433px){
+    .aboutUsContainer{
+        width: 96%;
+    }
+
+    .WhyChooseUsContainer{
+        width: 199%;
+        font-size: 1.8rem;
+    }
+    .aboutUs{
+        width: 241vw;
+    overflow: hidden;
+    }
+    .chooseUs{
+        width: 129vw;
+    }
+    .whyUsText{
+        padding: 2rem;
+    }
+    .aboutUsText{
+        font-size: 2.3rem;
+    }
+    .whyUsListText{
+        font-size: 2.3rem;
+    }
+    .whyUsText  p{
+        font-size: 2rem;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+    }
+    .video1 img ,.video2 img{
+        width: 500px;
+   
+    }
+    .playButton{
+        bottom: 267px;
+      
+        right: 273px;
+    }
+    .youTubeVideo1{
+        position: absolute;
+        top: 200px;
+        left: 8rem;
+    }
+    .learnMoreBtn{
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
 }

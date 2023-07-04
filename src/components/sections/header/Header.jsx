@@ -32,7 +32,7 @@ const Header = () => {
         </div>
         
        <button className={style.joinUsBtn} onClick={()=>navigate("/login")}>Join Us</button>
-      <MdNotes className={style.Menu} size={25} onClick={showMenu}/>
+      <MdNotes className={style.Menu} size={30} onClick={showMenu}/>
         
     </div>
   <div><Outlet /></div>

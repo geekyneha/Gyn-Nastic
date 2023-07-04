@@ -1,117 +1,101 @@
-.program-container {
-    height: fit-content; /* Set your desired height for the container */
-  
-    width: fit-content;
-    padding: 2rem 0 12rem;
-  }
-  .training-program {
-    margin: 0 14rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 74vw;
-    scroll-behavior: smooth; 
-    
-  }
-  .training-program::-webkit-scrollbar {
-    display: none;
-  }
-  .training-program-heading {
-    font-size: 3rem;
-    color: #db3137;
-    font-weight: bolder;
-    
-    padding: 4rem 0;
-    text-align: center;
+/* Team */
+.team-container {
+  height: fit-content;
 
-    
+  width: fit-content;
+  padding: 2rem 0 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.training-team {
+  margin: 0 14rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 74vw;
+  scroll-behavior: smooth;
+}
+.training-team::-webkit-scrollbar {
+  display: none;
+}
+
+/* Team heading */
+.training-team-heading {
+  font-size: 3rem;
+  color: #db3137;
+  font-weight: bolder;
+
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Team Members */
+.all-team {
+  display: flex;
+  gap: 2rem;
+  width: 90vw;
+
+  z-index: 0;
+  position: relative;
+  justify-content: centeer;
+}
+
+.team-image,
+.team-image > img {
+  border-radius: 8px;
+}
+
+.team-image > img {
+  width: 200px;
+  height: 200px;
+}
+
+/* view all */
+.view-all-container {
+  margin: 4rem;
+}
+
+.view-all {
+  padding: 0.8rem 2rem;
+  margin: 0 1rem;
+  border: 2px solid #db3137;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+/*scroll button */
+.scroll-left,
+.scroll-right {
+  color: #db3137;
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+}
+
+/* Media query for other screen */
+@media (max-width: 1200px) {
+  .training-team {
+    overflow: hidden;
+    width: fit-content;
   }
-  .all-program {
-    display: flex;
-    gap: 2rem;
-    width: 90vw;
-    /* overflow: scroll;
-      scroll-behavior: smooth; */
-    z-index: 0;
-    position: relative;
+  .all-team {
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
   }
-  .all-program-name {
-    display: flex;
-    gap: 2rem;
-  
-    /* width: 100vw;
-      overflow: scroll; */
-    z-index: 3;
-    position: relative;
-    top: 250px;
+  .team-image {
+    width: fit-content;
   }
-  .name {
-    /* width: 250px;
-    height: 250px; */
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-    padding: 6rem;
-  }
-  .Program-name {
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    position: relative;
-    color: white;
-    width: 250px;
-    height: 250px;
-    z-index: 6;
-    opacity: 0.5;
-    font-size: 2rem;
-  }
-  
-  .Program-image,
-  .Program-image > img,
-  .Program-name {
-    border-radius: 8px;
-  }
-  
-  .view-all-container {
-    margin: 4rem;
-  }
-  
-  .view-all {
-    padding: 0.8rem 2rem;
-    margin: 0 1rem;
-    border: 2px solid #db3137;
-    border-radius: 8px;
-    font-size: 1.4rem;
+}
+@media (max-width: 600px) {
+  .team-image img {
+    width: 380px;
+    height: 300px;
+    border-radius: 25px;
   }
   .scroll-left,
   .scroll-right {
-    color: #db3137;
-    position: relative;
-    top: 1rem;
-    cursor: pointer;
+    display: none;
   }
-  @media (max-width: 1200px) {
-    .training-program{
-  
-      overflow: hidden;
-    }
-    .all-program {
-      
-      flex-wrap: wrap;
-    overflow: hidden;
-      margin: 0;
-      width: 100%;
-     
-    }
-    .Program-image {
-      width: fit-content;
-      
-  
-    }
-    .all-program-name {
-      flex-direction: column;
-    }
-  }
-  
+}

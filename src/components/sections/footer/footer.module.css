@@ -1,25 +1,24 @@
+/* footer */
 .footer{
     height: fit-content;
-    background-color: black;
+    background-color: #28282A;
     color: #fff;
 }
+
 .footer-container{
     display: flex;
     border-bottom: 2px solid gray;
     justify-content: space-around;
     padding: 2rem;
 }
-.footer-container li{
-    line-height: 2;
-    list-style: none;
-    text-align: left;
-    font-size: 1.2rem;
-}
+
+/* CTA section */
 .CTA{
     width: 20%;
     font-size: 1.3rem;
     text-align: left;
 }
+
 .CTA h1{
     color: rgb(220, 80, 80);
 }
@@ -28,6 +27,16 @@
     border-radius: 20px;
 
 }
+
+/* seryices list */
+.footer-container li{
+    line-height: 2;
+    list-style: none;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* copyright */
 .copy-right{
     padding: 1rem 0;
 
