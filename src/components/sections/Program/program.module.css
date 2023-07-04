@@ -1,0 +1,139 @@
+.program-container {
+  height: fit-content; /* Set your desired height for the container */
+
+  width: 99w;
+  padding-bottom: 10rem;
+  overflow: hidden;
+}
+.training-program {
+  margin: 0 14rem;
+   overflow-x: scroll; 
+  /* overflow-y: hidden;  */
+  width: 74vw;
+  scroll-behavior: smooth; 
+}
+.training-program::-webkit-scrollbar {
+  display: none;
+}
+.training-program-heading {
+  font-size: 3rem;
+  color: #db3137;
+  font-weight: bolder;
+  margin-left: 14rem;
+  padding: 0;
+  text-align: left;
+  position: absolute;
+  position: relative;
+  top: 230px;
+}
+.all-program {
+  display: flex;
+  gap: 2rem;
+  width: 100vw;
+  /* overflow: scroll;
+    scroll-behavior: smooth; */
+  z-index: 0;
+  position: relative;
+}
+.all-program-name {
+  display: flex;
+  gap: 2rem;
+
+  /* width: 100vw;
+    overflow: scroll; */
+  z-index: 3;
+  position: relative;
+  top: 250px;
+}
+.name {
+  /* width: 250px;
+  height: 250px; */
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  padding: 6rem;
+}
+.Program-name {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  color: white;
+  width: 250px;
+  height: 250px;
+  z-index: 6;
+  opacity: 0.5;
+  font-size: 2rem;
+}
+
+.Program-image,
+.Program-image > img,
+.Program-name {
+  border-radius: 8px;
+}
+
+.view-all-container {
+  margin: 4rem;
+}
+
+.view-all {
+  padding: 0.8rem 2rem;
+  margin: 0 1rem;
+  border: 2px solid #db3137;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+.scroll-left,
+.scroll-right {
+  color: #db3137;
+  position: relative;
+  top: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .training-program{
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .all-program {
+   
+    margin: 0;
+    position: relative;
+   bottom: 680vh;
+   
+  }
+  .Program-image {
+    width: fit-content;
+    
+
+  }
+  .all-program-name {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:1200px) {
+  .all-program-name{
+    display: none;
+
+  }
+  .all-program{
+    flex-wrap: wrap;
+    position: static;
+
+  }
+
+  .training-program{
+    overflow: unset;
+    margin: 5rem 2rem;
+    width: 96vw;
+  }
+  .training-program-heading{
+    position: static;
+    padding: 1rem;
+  }
+}
