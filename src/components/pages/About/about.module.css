@@ -1,0 +1,251 @@
+/* About Us section */
+.aboutSection{
+    height: 80vh;
+    width: 97vw;
+   
+    
+   
+   
+}
+.aboutUs{
+    display: flex;
+    flex-wrap: wrap;
+   
+    align-items: flex-start;
+    height: fit-content;
+    padding: 4rem 0;
+
+    
+}
+.whyUsText > h1{
+    color: #d7242a;
+    text-align: left;
+    margin-left: 7rem;
+
+}
+.aboutUsContainer{
+    width: 60%;
+    height: 60%;
+    
+}
+.aboutUsContainer> h1 ,.WhyChooseUsContainer >h1{
+    text-align: left;
+    font-weight: bold;
+    color: #d7242a;
+    font-size: 3.8rem;
+}
+
+.video1{
+    width: 40%;
+    
+    
+}
+.video1 > img{
+    border-width: 4px;
+    margin-top: 2rem;
+     
+    border-top: 4px solid #d7242a;
+}
+.video2{
+    width: 40%;
+    height: 30%;
+  /* margin-top: 18%;
+  margin-left: 10%; */
+    
+}
+
+.video1 > img:hover,.video2> img:hover{
+    cursor: pointer;
+}
+ /*Choose US Section  */
+.chooseUs{
+    display: flex;
+    height: fit-content;
+
+
+}
+.WhyChooseUsContainer{
+    /* width: 60%; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:5rem;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    
+}
+.WhyChooseUsContainer >h1{
+    margin-left: 8rem;
+    line-height: 0;
+    text-align: left;
+    font-weight: bold;
+    color: #d7242a;
+    font-size: 3.8rem;
+}
+
+.aboutUsText{
+    width: 60%;
+    font-size: 1.3rem;
+   line-height: 1.5;
+   color: rgb(55, 54, 54);
+   font-weight:500;
+
+}
+
+.whyUsText{
+    width: 50%;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    
+
+}
+.whyUsListText{
+    font-size: 2.3rem;
+    color: rgb(67, 65, 65);
+    position: relative;
+    right: 4rem;
+    bottom: 0.8rem;
+}
+.whyUsText  li{
+    font-size: 6rem;
+    color: #d7242a;
+    line-height: 0.8;
+ 
+}
+.whyUsText p{
+   font-size: 1.5rem;
+    color: rgb(83, 82, 82);
+    line-height: 1.5;
+    margin-left: 8rem;
+    margin-top: 0;
+   
+ 
+}
+
+.aboutUsText >p , .whyUsText >p{
+    text-align: left;
+
+}
+
+/* Learn More Button */
+.learnMoreContainer{
+    
+    position: relative;
+    right: 16rem;
+  
+}
+.learnMoreBtn{
+   
+   height: 8%;
+    padding: 1rem 1rem;
+    background: red;
+    border-radius: 10px;
+    /* margin: 5px 20px; */
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+ 
+
+
+}
+.playButton{
+    color: #d7242a;
+    position: relative;
+    right: 155px;
+    bottom: 150px;
+    size: 50px;
+    
+}
+.playButton:hover{
+    cursor: pointer;
+}
+.youTubeVideo{
+    z-index: 2;
+    position: relative;
+    bottom: 350px;
+}
+
+.youTubeVideo2{
+    z-index: 2;
+    position: relative;
+    bottom: 300px;
+}
+
+@media (max-width: 768px){
+    .aboutSection{
+        height: 400vh;
+       
+       
+
+    }
+    .video1 {
+        width: 100%;
+    }
+ 
+    .video1 > img{
+        margin-left: 3rem;
+        margin: auto;
+    }
+    .aboutUs,.chooseUs
+    
+    {
+        flex-direction: column;
+        height: fit-content;
+        width: 100vw;
+    }
+    .whyUsText{
+        width: 100%;
+        margin: 0;
+    }
+    .aboutUsText {
+        width: 90%;
+        margin: 2rem;
+    }
+    .aboutUsContainer{
+
+        width: 100vw;
+        margin: auto
+
+    }
+    .whyUsText  li{
+        font-size: 3rem;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .WhyChooseUsContainer{
+        width: 95%;
+        margin: 1rem;
+    }
+    .whyUsText{
+        width: 100%;
+    }
+    .whyUsText p{
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .video2{
+        width: 80%;
+    }
+    .video2 > img:hover{
+        cursor: pointer;
+    }
+
+
+
+.aboutUsContainer> h1 ,.WhyChooseUsContainer >h1{
+    text-align: center;
+}
+.WhyChooseUsContainer >h1{
+    line-height: 3rem;
+  margin: 0;
+  font-size: 2.5rem;
+  
+}
+.whyUsListText{
+    font-size: 1.5rem;
+    margin-left: 25px;
+    position: relative;
+    bottom: 2px;
+}
+}
